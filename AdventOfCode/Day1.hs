@@ -11,6 +11,7 @@ part1 = captcha 1
 part2 :: String -> Int
 part2 xs = captcha (length xs `div` 2) xs
 
+main :: IO ()
 main = do
   s <- readFile "Day1.in"
   -- let s = "1212"
