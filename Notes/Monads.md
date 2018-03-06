@@ -46,7 +46,7 @@ h = \x -> (g x >>= f)
 
 Useful types:
 
-```
+```hs
 (>>=) :: Monad m => m a -> (a -> m b) -> m b
 
 (.) :: (b -> c) -> (a -> b) -> a -> c
