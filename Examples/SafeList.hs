@@ -13,7 +13,7 @@ safeHead (Cons a _) = a
 
 main :: IO ()
 main = do
-  print $ safeHead (Cons 1 Nil)
+  print $ safeHead (Cons (1::Int) Nil)
   
   -- this gives an error:
   -- print $ safeHead (Nil)
