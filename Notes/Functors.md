@@ -36,7 +36,7 @@ ghci> filter (>50) $ (*) <$> [2,5,10] <*> [8,10,11]
 [55,80,100,110]
 ```
 
-There's `lifeA2` in `Control.Applicative` standard library
+There's `liftA2` in `Control.Applicative` standard library
 ```hs
 liftA2 :: (Applicative f) => (a -> b -> c) -> f a -> f b -> f c  
 liftA2 f a b = f <$> a <*> b  
